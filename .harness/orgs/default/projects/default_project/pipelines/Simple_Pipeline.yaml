@@ -12,7 +12,7 @@ pipeline:
         build: <+input>
   stages:
     - stage:
-        name: Run acript
+        name: Run script
         identifier: Run_acript
         description: ""
         type: CI
@@ -21,6 +21,7 @@ pipeline:
           caching:
             enabled: true
             override: true
+            paths: []
           buildIntelligence:
             enabled: true
           infrastructure:
